@@ -7,10 +7,10 @@ class ProductoForm(forms.ModelForm):
         model = models.Producto
         fields = "__all__"
         
-class ProveedorForm(forms.ModelForm):
-    class Meta:
-        model = models.Proveedor
-        fields = "__all__"
-        widgets={
-            "nombre":forms.TextInput(attrs={"class":"form-control"}),
-        }
+#class ProveedorForm(forms.ModelForm):
+#    class Meta:
+#        model = models.Proveedor
+#        fields = "__all__"
+#        widgets={
+#            "nombre":forms.TextInput(attrs={"class":"form-control"}),
+#        }

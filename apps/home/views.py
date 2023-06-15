@@ -23,5 +23,5 @@ def index(request: HttpRequest) -> HttpResponse:
 #    return render(request, "home/register.html", {"form": form})
 #
 #
-#def about(request: HttpRequest) -> HttpResponse:
-#    return render(request, "home/about.html")
+def about(request: HttpRequest) -> HttpResponse:
+    return render(request, "home/about.html")

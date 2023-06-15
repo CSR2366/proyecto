@@ -7,6 +7,7 @@ from . import views
 
 urlpatterns = [
     path("", views.index, name="index"),
+    path("about/", views.about, name="about")
     
 ] 
 #+ staticfiles_urlpatterns()
@@ -14,4 +15,4 @@ urlpatterns = [
     #path("login/", LoginView.as_view(template_name="home/login.html"), name="login"),
     #path("logout/", LogoutView.as_view(template_name="home/logout.html"), name="logout"),
     #path("register/", views.register, name="register"),
-    #path("about/", views.about, name="about"),
+    #
