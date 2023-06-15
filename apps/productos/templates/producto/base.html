@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        body {
+            background-image:url('statics/core/img/logocons.PNG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSTRUMAT productos</title>
+</head>
+<body>
+
+   <div>
+    <h1 style="text-align: center"; display="inline block">CONSTRUMAT</h1>
+   </div>
+
+   {% block titulo %}
+   <h2 style="text-align: center">NUESTROS PRODUCTOS</h2>
+   {% endblock titulo%}
+   
+    {% block content %}
+  
+    {% endblock content  %}
+
+    {% include 'productos/footer.html' %}
+</body>
+</html>

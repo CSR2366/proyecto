@@ -1,0 +1,9 @@
+{% extends 'productos/base.html' %}
+{% block content %}
+
+
+{% endblock content %}
+<a href="{% url 'productos:index' %}">Volver a Productos</a>
+<a href="{% url 'core:index' %}">Volver a Inicio</a>
+
+{% include 'products/footer.html' %}

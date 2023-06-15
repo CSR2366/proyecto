@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+{% block content %}
+ 
+<br> 
+
+<h1 style="text-align: center"> Has cerrado sesión</h1>
+<a style="text-align: center" href="{% url 'core:index' %}">Volver a inicio</a>
+    
+{% endblock  %}
+
+{% include 'core/footer.html' %}

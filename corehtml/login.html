@@ -1,0 +1,15 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class=" btn btn-primary">Iniciar sesión</button>
+</form>
+<br>
+<br>
+<br>
+<a href="{% url 'core:index' %}">Volver a Inicio</a>
+{% include 'productos/footer.html' %}
+
+{% endblock  %}
+

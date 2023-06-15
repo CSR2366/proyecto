@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% block nav %}
+{% include 'core/nav.html' %}
+{% endblock  %}
+
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <h3 class="d-flex align-items-center">Bienvenido {{user.username}}</h3>
+        <p><a href="{% url 'admin:index' %}" class="btn btn-primary">Administracion</a></p>
+            {% if user.usuario.avatar.url %}
+            <img src="{{user.usuario.avatar.url}}" alt="Avatar" style="height: 30px;"/>
+    
+            {% endif %}
+    {% endif %}
+        <a class="nav-item" style="text-align: left" href="{% url 'productos:productos_list' %}">Ir a Productos</a>
+        <br>
+        <br>
+        <a class="nav-item" style="text-align: left" href="{% url 'core:quienes_somos' %}">Quienes somos</a>
+    </nav>
+
+{% endblock content%}
+    
+{% include 'core/footer.html' %}

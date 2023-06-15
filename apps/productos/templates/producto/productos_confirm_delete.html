@@ -1,0 +1,16 @@
+{% extends 'productos/base.html' %}
+{% block titulo %}
+<h1>ELIMINAR PRODUCTO</h1>
+{% endblock titulo%}
+{% block content %}
+<p>Deseas eliminar "{{object.nombre}}?</p>
+
+<form  method="post">
+    {% csrf_token %}
+    <div>
+        <button type="submit" class="btn btn-danger">Confirmas eliminar "{{object.nombre}}"?</button>
+    </div>
+    <a href="{% url 'productos:index' %}" class="btn btn-primary">Volver a Productos</a>
+    <a href="{% url 'core:index' %}">Volver a Inicio</a>
+{% endblock content  %}
+{% include 'productos/footer.html' %}

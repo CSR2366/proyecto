@@ -1,0 +1,15 @@
+{% extends 'productos/base.html' %}
+{% block titulo %}
+<h1 style="text-align: center">NUESTROS PRODUCTOS</h1>
+{% endblock titulo%}
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Guardar</button>
+</form>
+{% endblock content  %}
+<a href="{% url 'productos:index' %}" class="btn btn-primary">Volver a Productos</a>
+<a href="{% url 'core:index' %}">Volver a Inicio</a>
+
+{% include 'productos/footer.html' %}

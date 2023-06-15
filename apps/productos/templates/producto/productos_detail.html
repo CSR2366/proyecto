@@ -1,0 +1,12 @@
+{% extends 'productos/base.html' %}
+{% block content %}
+<h2>Detalle de Productos</h2>
+<ul>
+    <li><p>Nombre: {{object.nombre}}</p></li>
+    <li><p>Descripcion: {{object.descripcion}}</p></li>
+    <li><p>Precio: {{object.precio}}</p></li>
+</ul>
+{% endblock content %}
+<a href="{% url 'productos:index' %}" class="btn btn-primary">Volver a Productos</a>
+<a href="{% url 'core:index' %}">Volver a Inicio</a>
+{% include 'productos/footer.html' %}

@@ -1,0 +1,31 @@
+{% extends 'productos/base.html' %}
+
+
+{% block content %}
+ {% if user.is_staff %}
+  <a href="{% url 'productos:productos_create' %}" class="btn btn-info">Crear producto</a>
+ {% endif %}
+
+  <h1 color="white">Lista de Productos</h1>
+
+
+   {% for producto in object_list %}
+     <li> {{ producto.nombre }}</> 
+     <a href="{% url 'productos:productos_detail' producto.id %}" class=" btn btn-secondary">Ver detalle</a>
+     {% if user.is_staff %}
+      <a href="{% url 'productos:productos_update' producto.id %}" class=" btn btn-primary">Editar</a>
+      <a href="{% url 'productos:productos_delete' producto.id %}" class=" btn btn-danger">Eliminar</a>
+     {% endif %}
+       
+      
+    {% endfor %}
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a href="{% url 'core:index' %}">Volver a inicio</a>
+{% endblock content%}
+    
+{% include 'products/footer.html' %}

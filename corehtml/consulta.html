@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<h2 style="text-align: center">Crear consulta</h2>
+<form action="" method="post">
+    {% csrf_token %}
+<table>
+    {{form.as_table}}
+</table>
+
+<input type="submit" value="Crear consulta" style="font-size: 18px">
+
+</form>
+<br>
+<a href="{% url 'core:index' %}">Volver a inicio</a>
+{% endblock content %}
+{% include 'core/footer.html' %} 

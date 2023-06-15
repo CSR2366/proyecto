@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+{% block nav %}
+    
+{% endblock  %}
+
+{% block content %}
+
+    <h2><u>Quienes somos:</u></h2>
+   <p>Somos una empresa familiar con más de 10 años de experiencia en el sector de la construcción, ofrecemos una gran variedad de productos, servicios y más.</p>
+    <p>Mi nombre es Cesar Pasgal Barra, es mi primer experiencia en programación, tengo 40 años, el curso fue muy bueno, hace dos meses no tenia nungún conocimiento, hoy puedo hacer algo bastante funcional. Me llevo mucha información para practicar y poder seguir de manera autodidacta, hasta que vea en que curso Coder seguir. </p>
+   <a style="text-align: center" href="{% url 'core:index' %}">Volver a inicio</a>
+{% endblock content%}
+    
+{% include 'core/footer.html' %}
