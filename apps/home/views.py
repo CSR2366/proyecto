@@ -25,3 +25,6 @@ def index(request: HttpRequest) -> HttpResponse:
 #
 def about(request: HttpRequest) -> HttpResponse:
     return render(request, "home/about.html")
+
+def productos(request: HttpRequest) -> HttpResponse:
+    return render(request, "home/productos.html")

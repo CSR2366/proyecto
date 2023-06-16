@@ -1,6 +1,6 @@
-{% extends 'core/base.html' %}
+{% extends 'home/base.html' %}
 {% block nav %}
-{% include 'core/nav.html' %}
+{% include 'home/nav.html' %}
 {% endblock  %}
 
 
@@ -16,9 +16,9 @@
         <a class="nav-item" style="text-align: left" href="{% url 'productos:productos_list' %}">Ir a Productos</a>
         <br>
         <br>
-        <a class="nav-item" style="text-align: left" href="{% url 'core:quienes_somos' %}">Quienes somos</a>
+        <a class="nav-item" style="text-align: left" href="{% url 'home:quienes_somos' %}">Quienes somos</a>
     </nav>
 
 {% endblock content%}
     
-{% include 'core/footer.html' %}
+{% include 'home/footer.html' %}
