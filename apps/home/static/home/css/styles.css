@@ -2848,32 +2848,32 @@ textarea.form-control-lg {
   --bs-btn-bg: #20da51;
   --bs-btn-border-color: #0d6efd;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-bg: #ae1646;
   --bs-btn-hover-border-color: #0a58ca;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1bab22;
+  --bs-btn-active-bg: #d7192f;
   --bs-btn-active-border-color: #0a53be;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-bg: #d81a1d;
   --bs-btn-disabled-border-color: #0d6efd;
 }
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #6c757d;
+  --bs-btn-bg: #b9178e;
   --bs-btn-border-color: #6c757d;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #5c636a;
+  --bs-btn-hover-bg: #c11b9a;
   --bs-btn-hover-border-color: #565e64;
   --bs-btn-focus-shadow-rgb: 130, 138, 145;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #565e64;
+  --bs-btn-active-bg: #9d206f;
   --bs-btn-active-border-color: #51585e;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-bg: #be0f72;
   --bs-btn-disabled-border-color: #6c757d;
 }
 
@@ -2987,7 +2987,7 @@ textarea.form-control-lg {
   --bs-btn-hover-border-color: #0d6efd;
   --bs-btn-focus-shadow-rgb: 13, 110, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0d6efd;
+  --bs-btn-active-bg: #9eb715;
   --bs-btn-active-border-color: #0d6efd;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #0d6efd;
@@ -3034,11 +3034,11 @@ textarea.form-control-lg {
   --bs-btn-color: #1dd056;
   --bs-btn-border-color: #279a68;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #14a04a;
+  --bs-btn-hover-bg: #0d76c1;
   --bs-btn-hover-border-color: #26bb78;
   --bs-btn-focus-shadow-rgb: 13, 202, 240;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #10af5f;
+  --bs-btn-active-bg: #97da1a;
   --bs-btn-active-border-color: #2a8b54;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #279e4f;
