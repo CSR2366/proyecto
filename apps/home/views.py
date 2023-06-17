@@ -28,3 +28,6 @@ def about(request: HttpRequest) -> HttpResponse:
 
 def productos(request: HttpRequest) -> HttpResponse:
     return render(request, "home/productos.html")
+
+def envios(request: HttpRequest) -> HttpResponse:
+    return render(request, "home/envios.html")
